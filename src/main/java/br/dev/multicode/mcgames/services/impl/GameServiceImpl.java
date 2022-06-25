@@ -3,7 +3,7 @@ package br.dev.multicode.mcgames.services.impl;
 import br.dev.multicode.mcgames.api.http.requests.PostGameRequest;
 import br.dev.multicode.mcgames.api.http.responses.GameResponse;
 import br.dev.multicode.mcgames.entities.Game;
-import br.dev.multicode.mcgames.utils.DataMapper;
+import br.dev.multicode.mcgames.mappers.DataMapper;
 import br.dev.multicode.mcgames.repositories.GameRepository;
 import br.dev.multicode.mcgames.services.GameService;
 import com.amazonaws.services.kms.model.NotFoundException;

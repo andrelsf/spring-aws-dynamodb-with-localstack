@@ -1,9 +1,10 @@
-package br.dev.multicode.mcgames.utils;
+package br.dev.multicode.mcgames.mappers;
 
 import br.dev.multicode.mcgames.api.http.requests.PostGameRequest;
 import br.dev.multicode.mcgames.api.http.responses.GameResponse;
 import br.dev.multicode.mcgames.entities.Game;
 import br.dev.multicode.mcgames.entities.Platform;
+import java.time.ZonedDateTime;
 import java.util.UUID;
 import org.apache.commons.lang3.NotImplementedException;
 
@@ -31,6 +32,8 @@ public class DataMapper {
     game.setDescription(postGameRequest.getDescription());
     game.setPlatform(Platform.valueOf(postGameRequest.getPlatform()));
     game.setPrice(postGameRequest.getPrice());
+    game.setCreatedAt(ZonedDateTime.now().toString());
+    game.setUpdatedAt(ZonedDateTime.now().toString());
 
     return game;
   }

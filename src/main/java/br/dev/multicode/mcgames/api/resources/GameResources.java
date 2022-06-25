@@ -37,7 +37,7 @@ public class GameResources {
   public ResponseEntity<Void> postANewGame(@RequestBody @Valid PostGameRequest postGameRequest)
   {
     final String gameId = gameService.create(postGameRequest);
-    final URI uriLocation = UriComponentsBuilder.fromUriString("/games/{gameId}")
+    final URI uriLocation = UriComponentsBuilder.fromUriString("/api/games/{gameId}")
         .buildAndExpand(gameId)
         .toUri();
     return ResponseEntity.status(HttpStatus.CREATED)
