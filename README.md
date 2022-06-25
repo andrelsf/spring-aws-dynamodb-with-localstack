@@ -7,7 +7,19 @@
  - Java 11+
  - LocalStack
 
-#### LocalStack
+### AWS CLI
+
+* [AWS CLI](https://aws.amazon.com/pt/cli/)
+
+```shell
+aws configure
+Key ID: accessK3yFake
+Access Key: secretK3yFake
+Region: us-east-1
+Format: json
+```
+
+### LocalStack
 
 ```shell
 # Start in background
