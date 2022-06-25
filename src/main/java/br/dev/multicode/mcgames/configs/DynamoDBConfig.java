@@ -16,16 +16,16 @@ import org.springframework.context.annotation.Configuration;
 @EnableDynamoDBRepositories(basePackages = "br.dev.multicode.mcgames.repositories")
 public class DynamoDBConfig {
 
-  @Value("aws.region")
+  @Value("${aws.region}")
   private String region;
 
-  @Value("aws.accessKey")
+  @Value("${aws.accessKey}")
   private String accessKey;
 
-  @Value("aws.secretKey")
+  @Value("${aws.secretKey}")
   private String secretKey;
 
-  @Value("aws.dynamodb.endpoint")
+  @Value("${aws.dynamodb.endpoint}")
   private String endpoint;
 
   @Bean
