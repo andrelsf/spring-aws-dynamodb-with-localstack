@@ -19,7 +19,7 @@ aws:
   accessKey: "accessK3y"
   secretKey: "secretK3y"
   dynamodb:
-    endpoint: "http://localhost:4569"
+    endpoint: "http://localhost:4566"
 
 logging:
   level:
